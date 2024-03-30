@@ -1,7 +1,10 @@
 pub use tendermint::merkle::HASH_SIZE;
 
 /// The number of validators on the Tendermint chain.
-pub const VALIDATOR_SET_SIZE_MAX: usize = 100;
+/// Picasso's Testnet
+pub const VALIDATOR_SET_SIZE_MAX: usize = 18;
+/// Picasso's Mainnet
+/// pub const VALIDATOR_SET_SIZE_MAX: usize = 42;
 
 /// The maximum number of bytes in a protobuf-encoded chain ID. The maximum chain ID length is
 /// 50 characters + 2 bytes for the encoding prefix. Source:
