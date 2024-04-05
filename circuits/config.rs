@@ -24,9 +24,13 @@ impl TendermintConfig<CELESTIA_CHAIN_ID_SIZE_BYTES> for CelestiaConfig {
 /// Mocha-4's chain config.
 pub const MOCHA_4_CHAIN_ID_BYTES: &[u8] = b"mocha-4";
 pub const MOCHA_4_CHAIN_ID_SIZE_BYTES: usize = MOCHA_4_CHAIN_ID_BYTES.len();
+
+/// Banksy banksy-testnet-5
+pub const BANKSY_TESTNET_CHAIN_ID: &[u8] = b"banksy-testnet-5";
+pub const BANKSY_TESTNET_CHAIN_ID_SIZE_BYTES: usize = BANKSY_TESTNET_CHAIN_ID.len();
 #[derive(Debug, Clone, PartialEq)]
 pub struct Mocha4Config;
-impl TendermintConfig<MOCHA_4_CHAIN_ID_SIZE_BYTES> for Mocha4Config {
-    const CHAIN_ID_BYTES: &'static [u8] = MOCHA_4_CHAIN_ID_BYTES;
+impl TendermintConfig<BANKSY_TESTNET_CHAIN_ID_SIZE_BYTES> for Mocha4Config {
+    const CHAIN_ID_BYTES: &'static [u8] = BANKSY_TESTNET_CHAIN_ID;
     const SKIP_MAX: usize = SKIP_MAX;
 }
