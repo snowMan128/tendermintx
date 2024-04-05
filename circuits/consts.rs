@@ -2,7 +2,7 @@ pub use tendermint::merkle::HASH_SIZE;
 
 /// The number of validators on the Tendermint chain.
 /// Picasso's Testnet
-pub const VALIDATOR_SET_SIZE_MAX: usize = 18;
+pub const VALIDATOR_SET_SIZE_MAX: usize = 14;
 /// Picasso's Mainnet
 /// pub const VALIDATOR_SET_SIZE_MAX: usize = 42;
 
