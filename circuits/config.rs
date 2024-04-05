@@ -29,8 +29,8 @@ pub const MOCHA_4_CHAIN_ID_SIZE_BYTES: usize = MOCHA_4_CHAIN_ID_BYTES.len();
 pub const BANKSY_TESTNET_CHAIN_ID: &[u8] = b"banksy-testnet-5";
 pub const BANKSY_TESTNET_CHAIN_ID_SIZE_BYTES: usize = BANKSY_TESTNET_CHAIN_ID.len();
 #[derive(Debug, Clone, PartialEq)]
-pub struct Mocha4Config;
-impl TendermintConfig<BANKSY_TESTNET_CHAIN_ID_SIZE_BYTES> for Mocha4Config {
+pub struct BanksyConfig;
+impl TendermintConfig<BANKSY_TESTNET_CHAIN_ID_SIZE_BYTES> for BanksyConfig {
     const CHAIN_ID_BYTES: &'static [u8] = BANKSY_TESTNET_CHAIN_ID;
     const SKIP_MAX: usize = SKIP_MAX;
 }
